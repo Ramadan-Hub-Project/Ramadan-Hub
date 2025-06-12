@@ -1,0 +1,3 @@
+# 🌙 "Ramadan Hub" – The Only Website You Need for Ramadan
+
+## "Ramadan Hub" is a beautifully designed, fully responsive web app that serves as a one-stop platform for all essential Ramadan-related information. The website will provide daily Quran and Hadith reminders, prayer times, a nearby mosque locator, and additional Ramadan tools to make fasting and worship easier for Muslims around the world.
