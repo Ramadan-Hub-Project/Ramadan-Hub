@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Colours we're using inside our project */
+
+:root{
+    --primary-color: #1aa179;
+    --color1: #1b4c3f;
+    --secondary-color: #1f2937;
+    --color2: #6b7280; 
+    --color3: #f9fafb; 
+    --bgcolor: #eaf7f2; 
+    --color4: #0f766e; 
+    --color5: #ffffff; 
+}
