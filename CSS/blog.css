@@ -17,3 +17,506 @@
     --color4: #0f766e; 
     --color5: #ffffff; 
 }
+
+/* Header CSS Starts Here */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 90px;
+    box-shadow: 5px 0 12px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #1AA179;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+.logo .fa-moon{
+    font-size: 25px;
+}
+
+.menu-bar nav ul{
+    display: flex;
+}
+
+.menu-bar nav ul li{
+    list-style-type: none;
+    margin: 15px;
+}
+
+.menu-bar nav ul li a{
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 18px;
+}
+
+.sing-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.sing-up-btn button{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #1AA179;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.sing-up-btn .fa-moon{
+    color: #1AA179;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Header Ends Here */
+
+/* Hero Starts Here */
+
+.hero-blog{
+    margin-top: 130px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-blog-1{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-1-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-1-info{
+    margin-left: 20px;
+}
+
+.hero-blog-1-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-1-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-1-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-2{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-2-image img{
+    max-width: 350px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero-blog-2-info{
+    margin-left: 20px;
+}
+
+.hero-blog-2-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-2-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-2-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-3{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-3-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-3-info{
+    margin-left: 20px;
+}
+
+.hero-blog-3-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-3-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-3-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-4{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-4-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-4-info{
+    margin-left: 20px;
+}
+
+.hero-blog-4-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-4-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-4-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-5{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-5-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-5-info{
+    margin-left: 20px;
+}
+
+.hero-blog-5-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-5-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-5-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-6{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-6-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-6-info{
+    margin-left: 20px;
+}
+
+.hero-blog-6-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-6-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-6-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-7{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-7-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-7-info{
+    margin-left: 20px;
+}
+
+.hero-blog-7-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-7-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-7-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+.hero-blog-8{
+    display: flex;
+    align-items: center;
+}
+
+.hero-blog-8-image img{
+    max-width: 350px;
+    height: 150px;
+}
+
+.hero-blog-8-info{
+    margin-left: 20px;
+}
+
+.hero-blog-8-info h4{
+    font-weight: lighter;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.hero-blog-8-info h1{
+    font-size: 14px;
+    width: 230px;
+    margin: 10px 0;
+}
+
+.hero-blog-8-info p {
+    font-size: 14px;
+    width: 320px;
+    font-weight: 200;
+}
+
+/* Hero Ends Here */
+
+/* Stay Connected Starts Here */
+
+.stay-connected{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F692D;
+    height: 200px;
+}
+
+.stay-connected-title{
+    text-align: center;
+}
+
+.stay-connected-title h1{
+    color: white;
+}
+
+.stay-connected-title h3{
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.stay-conntcted-form input{
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: black;
+}
+
+.stay-conntcted-form button{
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1AA179;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Stay Connected Ends Here */
+
+/* Footer Starts Here */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #2C352E;
+    height: 280px;
+    padding-top: 50px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #1AA179;
+    margin-left: 30px;
+    
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-logo .fa-moon{
+    font-size: 25px;
+}
+
+.footer-logo-info h3{
+    max-width: 280px;
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links h3{
+    color: white;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+}
+
+.resources h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resources a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.connect h3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connect .fa-brands{
+    font-size: 25px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin: 0 30px;
+    margin-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Footer Ends Here */

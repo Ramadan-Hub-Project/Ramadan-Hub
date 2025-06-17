@@ -3,11 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./CSS/prayer-times.css">
     <title>Ramadan Hub - Prayer Times</title>
 </head>
 <body>
+ 
+ <header>
+    <div class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-moon"> Ramadan Hub</i>
     
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Prayer Times</a></li>
+          <li><a href="quran.html">Quran</a></li>
+          <li><a href="#">Mosques</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+      <div>
+        <i class="fa-solid fa-moon" style="color: #00f5ab"></i>
+      <button class="signin-btn">Sign In</button>
+    </div>
+    </div>
+  </header>
+
+  
+  <main>
+    <section class="prayer-section">
+      <h2>Prayer Times</h2>
+      <p>Today's prayer schedule for your location</p>
+
+      <div class="prayer-grid">
+        <div class="prayer-times">
+          <div class="prayer"><span>Fajr</span><strong>5:12 AM</strong></div>
+          <div class="prayer"><span>Duhur</span><strong>12:30 PM</strong></div>
+          <div class="prayer"><span>Asr</span><strong>3:45 PM</strong></div>
+          <div class="prayer"><span>Maghrib</span><strong>6:48 PM</strong></div>
+          <div class="prayer"><span>Isha</span><strong>8:15 PM</strong></div>
+        </div>
+
+        <div class="wakhtiga-xiga">
+          <p>Time Until Next Prayer</p>
+          <h4>Next Prayer: Asr</h4>
+          <div class="timer">02:45:30</div>
+          <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="wakhti">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to receive updates about prayer times, events and more</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo2">
+          <i class="fa-solid fa-moon"> Ramadan Hub</i>
+    
+        </div>
+        <p>Your complete companion for the blessed month of Ramadan</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Prayer Times</a></li>
+            <li><a href="#">Quran</a></li>
+            <li><a href="#">Find Mosques</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="social-icons">
+       
+            <a href="#"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                 <a href="#"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Ramadan Hub. All rights reserved</p>
+    </div>
+  </footer>
     <script src="./JS/prayer-times.js"></script>
 </body>
 </html>
