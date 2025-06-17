@@ -1,19 +1,291 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  /* Colours we're using inside our project */
+  
+  :root{
+      --primary-color: #1aa179;
+      --color1: #1b4c3f;
+      --secondary-color: #1f2937;
+      --color2: #6b7280; 
+      --color3: #f9fafb; 
+      --bgcolor: #eaf7f2; 
+      --color4: #0f766e; 
+      --color5: #ffffff; 
+  }
+  
+  body {
     font-family: sans-serif;
-}
-
-/* Colours we're using inside our project */
-
-:root{
-    --primary-color: #1aa179;
-    --color1: #1b4c3f;
-    --secondary-color: #1f2937;
-    --color2: #6b7280; 
-    --color3: #f9fafb; 
-    --bgcolor: #eaf7f2; 
-    --color4: #0f766e; 
-    --color5: #ffffff; 
-}
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  .logo {
+    font-weight: bold;
+    color: #00754a;
+    font-size: 1.2rem;
+  }
+  .logo2 {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .navbar nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  .navbar nav ul li a:hover {
+   background-color: #00754a;
+   border-radius: 10px;
+   font-size: 18px;
+  }
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .signin-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    
+  }
+  
+  .quraan-xadiis {
+    padding: 2rem;
+    text-align: center;
+  }
+  .quraan {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .xadiis {
+    padding: .5rem .5rem; 
+    text-align: center;
+  }
+  
+  .plays {
+    justify-content: space-between;
+      flex-wrap: wrap;
+    color: white;
+    border: none;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    
+  }
+  .quraan-xadiis {
+    padding: .05rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .quraan {
+    padding: 0rem 2rem;
+    text-align: center;
+  }
+  .xadiis {
+    padding: .05rem .5rem .5rem .5rem; 
+    text-align: center;
+    margin-top: .5rem;
+   flex-direction: column;
+    justify-items: center;
+    width: 350px;
+   
+  }
+  
+  .plays {
+    justify-content: space-between;
+      flex-wrap: wrap;
+    color: white;
+    border: none;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    
+  }
+  .plays :hover{
+  background-color: black;
+    font-size:1rem;
+  }
+  .plays button{
+      background-color: #00fcab;
+      color: white;
+    border: none;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+  border-radius:8px;
+  
+  }
+  .plays button{
+      background-color: #00fcab;
+      color: white;
+    border: none;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+  border-radius:8px;
+  
+  }
+  
+  .wakhtiga-xiga {
+    padding: 1.5rem;
+    background: #e6e6e6;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .wakhtiga-xiga .timer {
+    font-size: 2rem;
+    color: #00754a;
+    margin: 0.5rem 0;
+  }
+  .progress-bar {
+    background: #ccc;
+    height: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress {
+    height: 5px;
+    width: 60%;
+    background: #00754a;
+  }
+  
+  
+  .wakhti {
+    background: #2e7d32;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  .wakhti form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .wakhti input[type="email"] {
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    max-width: 90%;
+  }
+  .wakhti button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #34c759;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #1b5e20;
+    color: white;
+  }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .footer-brand {
+    flex: 1 1 250px;
+  }
+  .footer-links {
+    display: flex;
+    flex: 2 1 500px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-links h4 {
+    margin-bottom: 0.5rem;
+  }
+  .footer-links ul {
+    list-style: none;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .social-icons a {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    background: #144d19;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+   
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-brand,
+    .footer-links > div {
+      flex: 1 1 100%;
+    }
+  
+    .wakhti form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wakhti input[type="email"],
+    .wakhti button {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .timer {
+      font-size: 1.5rem;
+    }
+  
+    .prayer strong {
+      font-size: 1rem;
+    }
+  }
