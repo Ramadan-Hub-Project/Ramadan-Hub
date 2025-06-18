@@ -17,3 +17,351 @@
     --color4: #0f766e; 
     --color5: #ffffff; 
 }
+body {
+    max-width: 12000;
+    margin: auto;
+    background-color:#EBFFF9;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fdfffe;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+    gap: 1rem;
+    padding: 0.8rem;
+    
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.fa-moon {
+    color: #1aa179;
+}
+
+.logo h1  {
+    font-size: 1.2rem;
+    color: #1aa179;
+   
+}
+
+ .main-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #1c1f23;
+   
+}
+
+.main-nav a:hover {
+    color: #45a286
+}
+
+.sign {
+    background-color: #1aa179;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+   
+    
+  }
+
+.hero-area h2{
+    font-size: 1.8rem;
+   line-height: 1.5; 
+   color: #2e6856;
+}
+.hero-area span{
+    color: #1aa179;
+}
+
+.hero-area p {
+    color: #81858c;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#start-button{
+    background-color: #1aa179;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+    margin-right: 2rem;
+    cursor: pointer;
+    
+   }
+   
+   #start-button:hover {
+     background-color: rgb(92, 174, 165);
+     opacity: 0.6;
+     transition: 0.3s;
+     color: #000000;
+   }
+
+   #learn-button {
+    background-color:#ebfdf8;
+    border-color: #1aa179;
+    border-style: solid;
+    color: #1aa179;
+    width: 110px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+    margin-right: 2rem;
+    cursor: pointer;
+   }
+   
+   #learn-button:hover {
+    background-color: rgb(92, 174, 165);
+    opacity: 0.6;
+    transition: 0.3s;
+    color: #000000;
+  }
+
+
+
+.mosque_pic {
+    max-width: 520px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+section {
+    background-color: #f8f9fa;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    
+   }
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 1rem;
+    color: #3c3e42;
+    margin: 1rem;
+   }
+
+.inner p {
+    font-size: 1.2rem;
+    color: #3f4145;
+    margin: 0.5rem;
+
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+}
+
+.icons {
+   max-width: 300px;
+   padding: 3rem;
+   text-align: center;
+   border-radius: 0.8rem;
+   box-shadow: 0.5px 0 1px rgba(0, 0, 0, 0.1);
+   
+}
+
+.icons h4{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem;    
+    color: #191b1f;
+}
+
+.icons p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #47474c;
+}
+
+.fa-book-quran{
+    color: #1aa179;
+    font-size: 2rem;
+   
+    
+    
+}
+
+.fa-clock {
+    color: #1aa179;
+    font-size: 2rem;
+   
+   
+}
+
+.fa-mosque {
+    color: #1aa179;
+    font-size: 2rem;
+   
+}
+
+.fa-hands-holding-circle {
+    color: #1aa179;
+    font-size: 2rem;
+   
+}
+.icons button{
+    background-color:#c3ffed;
+    padding: 1rem;
+    border: none;
+    object-fit: cover;
+    border-radius: 2rem; 
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#0f5b46;
+    padding: 3rem 2rem;
+    
+}
+
+.main-container h5 {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-container p {
+    line-height: 1.5;
+    color: #ffffffcb;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.main-container input{
+    width: 220px;
+    border-radius: 0.8rem;
+    font-size: 0.5rem;
+    border: none;
+    padding: 0.4rem;
+   
+}
+
+.main-container button {
+    background-color: #2ea782;
+    width: 60px;
+    height: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    margin: 0.2rem;
+    cursor: pointer;
+
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #293833;
+    padding: 2rem;
+    
+}
+
+.top {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo-moon {
+    flex-basis: 25%;
+    padding: 2px;
+}
+
+.fa-moon {
+    color: #1aa179;
+}
+
+.logo-moon h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.logo-moon p {
+  color: #1aa179;
+}
+
+.nav h2{
+    width: fit-content;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 0.8rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media {
+    color: #fff;
+}
+
+.bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #1a765b
+}
+
+.bottom p {
+    color: #127759;
+}
+
+
