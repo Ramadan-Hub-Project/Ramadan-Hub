@@ -17,3 +17,68 @@
     --color4: #0f766e; 
     --color5: #ffffff; 
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up{
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+form{
+   width: 300px;
+   margin-left: 20px;
+   padding-bottom: 20px;
+}
+
+label{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    background-color:  #1aa179;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-left: 90px;
+    border-radius: 8px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+a{
+    color: #1aa179;
+}
