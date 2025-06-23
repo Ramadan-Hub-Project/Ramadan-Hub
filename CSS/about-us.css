@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,90 +7,115 @@
 
 /* Colours we're using inside our project */
 
-:root{
+:root {
     --primary-color: #1aa179;
     --color1: #1b4c3f;
     --secondary-color: #1f2937;
-    --color2: #6b7280; 
-    --color3: #f9fafb; 
-    --bgcolor: #eaf7f2; 
-    --color4: #0f766e; 
-    --color5: #ffffff; 
+    --color2: #6b7280;
+    --color3: #f9fafb;
+    --bgcolor: #eaf7f2;
+    --color4: #0f766e;
+    --color5: #ffffff;
 }
 
-header {
+/* Header CSS Starts Here */
+
+header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #fdfffe;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
-    gap: 1rem;
-
+    background-color: #ffffff;
+    height: 90px;
+    box-shadow: 5px 0 12px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
-}
-
-.logo img {
-    width: 50px;
-    height: 40px;
-}
-
-.logo h1  {
-    font-size: 1.8rem;
-    color: #1aa179;
-   
-}
-
- .main-nav{
+.logo{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    color: #1AA179;
+    cursor: pointer;
+    margin-left: 30px;
+    gap: 5px;
 }
 
-.main-nav a {
+.logo h1{
+    font-size: 25px;
+}
+
+.logo .fa-moon{
+    font-size: 25px;
+}
+
+.menu-bar nav ul{
+    display: flex;
+}
+
+.menu-bar nav ul li{
+    list-style-type: none;
+    margin: 15px;
+}
+
+.menu-bar nav ul li a{
     text-decoration: none;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #383a3d;
-   
+    color: #6B7280;
+    font-size: 18px;
 }
 
-.main-nav a:hover {
-    color:#127970;
+.menu-bar nav ul li a:hover{
+    color: #209B6F;
 }
 
-.sign {
-    background-color: #237c62;
-    width: auto;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    margin: 1rem 1.5rem;
+.sing-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.sing-up-btn button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #209B6F;
     border: none;
-    border-radius: 3.8rem;
-    font-size: 1.2rem;
+    border-radius: 20px;
+    color: white;
     cursor: pointer;
 }
 
-.sign:hover {
-    color: #7489b1;
+.sing-up-btn button:hover{
+    background: none;
+    border: 2px solid #209B6F;
+    color: #209B6F;
+}
+
+.sing-up-btn .fa-moon{
+    color: #1AA179;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Header Ends Here */
+
+.hero-profile{
+    margin-top: 100px;
 }
 
 .profile {
-   display: inline-block;
-   flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
-   padding: 1.8rem 2rem;
-   margin: 0.5rem 1rem;
-   margin-top: 2rem;
-   gap: 1rem;
-   
+    display: inline-block;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem 2rem;
+    margin: 0.5rem 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+
 }
 
 .profile-pic {
@@ -100,8 +125,8 @@ header {
     height: 200px;
     object-fit: cover;
     object-position: center;
-    
-    
+
+
 }
 
 .name {
@@ -116,72 +141,181 @@ header {
     font-weight: 400;
 }
 
-footer {
-    width: 100%;
-    bottom: 0;
-    background-color: #293833;
-    padding: 2rem;
-    
-}
+/* Stay Connected Starts Here */
 
-.top {
-    width: 85%;
-    margin: auto;
+.stay-connected {
+    margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #295848;
+    height: 200px;
 }
 
-.logo-moon {
-    flex-basis: 25%;
-    padding: 2px;
-}
-
-.fa-moon {
-    color: #1aa179;
-}
-
-.logo-moon h1 {
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.logo-moon p {
-  color: #1aa179;
-}
-
-.nav h2{
-    width: fit-content;
-    margin-bottom: 1rem;
-    position: relative;
-    color: #fff;
-    font-size: 1rem;
-}
-
-ul li {
-    list-style: none;
-    margin-bottom: 0.8rem;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.social-media {
-    color: #fff;
-}
-
-.bottom {
+.stay-connected-title {
     text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #1a765b
 }
 
-.bottom p {
-    color: #127759;
+.stay-connected-title h1 {
+    color: white;
 }
+
+.stay-connected-title h3 {
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.stay-conntcted-form input {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: black;
+}
+
+.stay-conntcted-form button {
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1D9A70;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Stay Connected Ends Here */
+
+/* Footer Starts Here */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #293C36;
+    height: 280px;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #1AA179;
+    margin-left: 30px;
+
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.footer-logo h1 {
+    color: #FEFEFE;
+}
+
+.footer-logo .fa-moon {
+    font-size: 25px;
+    color: #46B88D;
+}
+
+.footer-logo-info h3 {
+    max-width: 280px;
+    font-size: 15px;
+    color: #6EB99A;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links h3 {
+    color: white;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.quick-links a:hover {
+    color: #209B6F;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resources a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.resources a:hover {
+    color: #209B6F;
+}
+
+.connect h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connect .fa-brands {
+    font-size: 25px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.connect .fa-brands:hover {
+    color: #209B6F;
+}
+
+hr {
+    margin: 0 30px;
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Footer Ends Here */
 
 
 @media (max-width: 760px) {
@@ -189,6 +323,7 @@ ul li a{
         flex-direction: column;
         gap: 1rem;
     }
+
     .profile-pic {
         max-width: 100%;
         margin-top: 1rem;
@@ -197,8 +332,8 @@ ul li a{
 
 
 @media (max-width: 400px) {
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
