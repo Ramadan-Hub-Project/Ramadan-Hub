@@ -250,3 +250,8 @@ function displayCardHadith() {
 displayCardHadith()
 
 // Hadiths Ends Here
+
+const myButton = document.querySelector("#btn");
+myButton.addEventListener("click", function() {
+    window.location.href = "sing-in.html";
+});
