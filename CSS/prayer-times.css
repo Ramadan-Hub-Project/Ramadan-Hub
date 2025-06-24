@@ -123,7 +123,7 @@ header {
 }
 
 .prayer-times {
-  background: #e6e6e6;
+  background: #eff8f5;
   padding: 1.5rem;
   border-radius: 10px;
   display: grid;
@@ -143,13 +143,13 @@ header {
 }
 
 .prayer strong {
-  color: #00754a;
+  color: #1aa179;
   font-size: 1.2rem;
 }
 
 .wakhtiga-xiga {
   padding: 1.5rem;
-  background: #e6e6e6;
+  background: #eff8f5;
   border-radius: 10px;
   text-align: center;
 }
@@ -173,10 +173,21 @@ header {
   background: #00754a;
 }
 
+
+/* Newsletter */
+.wakhti {
+  background: #2c5d4d;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.wakhti form {
+
 /* Stay Connected Starts Here */
 
 .stay-connected {
   margin-top: 50px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,10 +239,12 @@ header {
 /* Footer Starts Here */
 
 footer {
+
+  background: #293c36;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #293C36;
   height: 310px;
   padding-top: 50px;
 }
