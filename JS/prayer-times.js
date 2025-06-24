@@ -28,14 +28,14 @@ function cardPrayerTimes(prayer) {
     ishaSalah.textContent = prayer.Isha
 }
 
-function displayCardHadith() {
+function displayCardPraerTimes() {
     fetchPrayerTimesAPI()
         .then((prayer) => {
             cardPrayerTimes(prayer)
         })
 }
 
-displayCardHadith()
+displayCardPraerTimes()
 
 function getNextPrayerAndCountdown(prayers) {
     const prayerOrder = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]
@@ -109,7 +109,7 @@ function startCountdown(nextPrayerTime, previousPrayerTime, nextPrayerName) {
 }
 
 
-function displayCardHadith() {
+function displayCardProgresPrayerTimes() {
     fetchPrayerTimesAPI()
         .then((prayers) => {
             cardPrayerTimes(prayers)
@@ -119,3 +119,5 @@ function displayCardHadith() {
             startCountdown(nextPrayerTime, previousPrayerTime, nextPrayerName)
         })
 }
+
+displayCardProgresPrayerTimes()
