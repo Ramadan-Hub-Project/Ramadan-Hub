@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,20 +7,20 @@
 
 /* Colours we're using inside our project */
 
-:root{
+:root {
     --primary-color: #1aa179;
     --color1: #1b4c3f;
     --secondary-color: #1f2937;
-    --color2: #6b7280; 
-    --color3: #f9fafb; 
-    --bgcolor: #eaf7f2; 
-    --color4: #0f766e; 
-    --color5: #ffffff; 
+    --color2: #6b7280;
+    --color3: #f9fafb;
+    --bgcolor: #eaf7f2;
+    --color4: #0f766e;
+    --color5: #ffffff;
 }
 
 /* Header CSS Starts Here */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,56 +33,67 @@ header{
     left: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     color: #1AA179;
     cursor: pointer;
     margin-left: 30px;
+    gap: 5px;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 25px;
 }
 
-.logo .fa-moon{
+.logo .fa-moon {
     font-size: 25px;
 }
 
-.menu-bar nav ul{
+.menu-bar nav ul {
     display: flex;
 }
 
-.menu-bar nav ul li{
+.menu-bar nav ul li {
     list-style-type: none;
     margin: 15px;
 }
 
-.menu-bar nav ul li a{
+.menu-bar nav ul li a {
     text-decoration: none;
     color: #6B7280;
     font-size: 18px;
 }
 
-.sing-up-btn{
+.menu-bar nav ul li a:hover {
+    color: #209B6F;
+}
+
+.sing-up-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
 }
 
-.sing-up-btn button{
+.sing-up-btn button {
     width: 100px;
-    height: 30px;
+    height: 40px;
     font-size: 18px;
-    background-color: #1AA179;
+    background-color: #209B6F;
     border: none;
     border-radius: 20px;
     color: white;
     cursor: pointer;
 }
 
-.sing-up-btn .fa-moon{
+.sing-up-btn button:hover {
+    background: none;
+    border: 2px solid #209B6F;
+    color: #209B6F;
+}
+
+.sing-up-btn .fa-moon {
     color: #1AA179;
     font-size: 25px;
     margin-right: 30px;
@@ -93,7 +104,7 @@ header{
 
 /* Hero Starts Here */
 
-.hero-blog{
+.hero-blog {
     margin-top: 130px;
     margin-left: 30px;
     margin-right: 30px;
@@ -104,27 +115,27 @@ header{
     gap: 10px;
 }
 
-.hero-blog-1{
+.hero-blog-1 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-1-image img{
+.hero-blog-1-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-1-info{
+.hero-blog-1-info {
     margin-left: 20px;
 }
 
-.hero-blog-1-info h4{
+.hero-blog-1-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-1-info h1{
+.hero-blog-1-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -136,28 +147,28 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-2{
+.hero-blog-2 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-2-image img{
+.hero-blog-2-image img {
     max-width: 350px;
     height: 150px;
     object-fit: cover;
 }
 
-.hero-blog-2-info{
+.hero-blog-2-info {
     margin-left: 20px;
 }
 
-.hero-blog-2-info h4{
+.hero-blog-2-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-2-info h1{
+.hero-blog-2-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -169,27 +180,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-3{
+.hero-blog-3 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-3-image img{
+.hero-blog-3-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-3-info{
+.hero-blog-3-info {
     margin-left: 20px;
 }
 
-.hero-blog-3-info h4{
+.hero-blog-3-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-3-info h1{
+.hero-blog-3-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -201,27 +212,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-4{
+.hero-blog-4 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-4-image img{
+.hero-blog-4-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-4-info{
+.hero-blog-4-info {
     margin-left: 20px;
 }
 
-.hero-blog-4-info h4{
+.hero-blog-4-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-4-info h1{
+.hero-blog-4-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -233,27 +244,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-5{
+.hero-blog-5 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-5-image img{
+.hero-blog-5-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-5-info{
+.hero-blog-5-info {
     margin-left: 20px;
 }
 
-.hero-blog-5-info h4{
+.hero-blog-5-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-5-info h1{
+.hero-blog-5-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -265,27 +276,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-6{
+.hero-blog-6 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-6-image img{
+.hero-blog-6-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-6-info{
+.hero-blog-6-info {
     margin-left: 20px;
 }
 
-.hero-blog-6-info h4{
+.hero-blog-6-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-6-info h1{
+.hero-blog-6-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -297,27 +308,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-7{
+.hero-blog-7 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-7-image img{
+.hero-blog-7-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-7-info{
+.hero-blog-7-info {
     margin-left: 20px;
 }
 
-.hero-blog-7-info h4{
+.hero-blog-7-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-7-info h1{
+.hero-blog-7-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -329,27 +340,27 @@ header{
     font-weight: 200;
 }
 
-.hero-blog-8{
+.hero-blog-8 {
     display: flex;
     align-items: center;
 }
 
-.hero-blog-8-image img{
+.hero-blog-8-image img {
     max-width: 350px;
     height: 150px;
 }
 
-.hero-blog-8-info{
+.hero-blog-8-info {
     margin-left: 20px;
 }
 
-.hero-blog-8-info h4{
+.hero-blog-8-info h4 {
     font-weight: lighter;
     margin-left: 15px;
     font-size: 12px;
 }
 
-.hero-blog-8-info h1{
+.hero-blog-8-info h1 {
     font-size: 14px;
     width: 230px;
     margin: 10px 0;
@@ -371,7 +382,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1F692D;
+    background-color: #295848;
     height: 200px;
 }
 
@@ -406,7 +417,7 @@ header{
     height: 50px;
     border-radius: 50px;
     border: none;
-    background-color: #1AA179;
+    background-color: #1D9A70;
     font-size: 20px;
     color: white;
     cursor: pointer;
@@ -421,7 +432,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #2C352E;
+    background-color: #293C36;
     height: 280px;
     padding-top: 50px;
 }
@@ -445,16 +456,22 @@ footer{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    gap: 10px;
+}
+
+.footer-logo h1{
+    color: #FEFEFE;
 }
 
 .footer-logo .fa-moon{
     font-size: 25px;
+    color: #46B88D;
 }
 
 .footer-logo-info h3{
     max-width: 280px;
     font-size: 15px;
-    color: white;
+    color: #6EB99A;
     margin-top: 20px;
     text-align: start;
 }
@@ -477,6 +494,10 @@ footer{
     margin: 5px 0;
 }
 
+.quick-links a:hover{
+    color: #209B6F;
+}
+
 .resources{
     display: flex;
     flex-direction: column;
@@ -494,6 +515,10 @@ footer{
     margin: 5px 0;
 }
 
+.resources a:hover{
+    color: #209B6F;
+}
+
 .connect h3{
     color: white;
     font-size: 20px;
@@ -506,6 +531,10 @@ footer{
     color: white;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.connect .fa-brands:hover{
+    color: #209B6F;
 }
 
 hr{
