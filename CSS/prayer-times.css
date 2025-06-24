@@ -79,7 +79,7 @@ body {
   gap: 2rem;
 }
 .prayer-times {
-  background: #e6e6e6;
+  background: #eff8f5;
   padding: 1.5rem;
   border-radius: 10px;
   display: grid;
@@ -96,12 +96,12 @@ body {
   font-size: 0.9rem;
 }
 .prayer strong {
-  color: #00754a;
+  color: #1aa179;
   font-size: 1.2rem;
 }
 .wakhtiga-xiga {
   padding: 1.5rem;
-  background: #e6e6e6;
+  background: #eff8f5;
   border-radius: 10px;
   text-align: center;
 }
@@ -124,7 +124,7 @@ body {
 
 /* Newsletter */
 .wakhti {
-  background: #2e7d32;
+  background: #2c5d4d;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -153,7 +153,7 @@ body {
 }
 
 footer {
-  background: #1b5e20;
+  background: #293c36;
   color: white;
 }
 .footer-top {
