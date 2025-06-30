@@ -16,6 +16,7 @@
     --bgcolor: #eaf7f2;
     --color4: #0f766e;
     --color5: #ffffff;
+   
 }
 
 /* Header CSS Starts Here */
@@ -104,6 +105,7 @@ header{
 
 .hero-profile{
     margin-top: 100px;
+    margin: 150px 0;
 }
 
 .profile {
@@ -115,6 +117,7 @@ header{
     margin: 0.5rem 1rem;
     margin-top: 1rem;
     gap: 1rem;
+    
 
 }
 
@@ -151,6 +154,7 @@ header{
     align-items: center;
     background-color: #295848;
     height: 200px;
+   
 }
 
 .stay-connected-title {
@@ -180,7 +184,7 @@ header{
 }
 
 .stay-conntcted-form button {
-    width: 170px;
+    width: 200px;
     height: 50px;
     border-radius: 50px;
     border: none;
