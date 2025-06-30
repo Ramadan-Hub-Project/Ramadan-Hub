@@ -56,6 +56,11 @@ header {
   font-size: 25px;
 }
 
+.menu-bar {
+  display: flex;
+  gap: 210px;
+}
+
 .menu-bar nav ul {
   display: flex;
 }
@@ -104,6 +109,14 @@ header {
   font-size: 25px;
   margin-right: 30px;
   cursor: pointer;
+}
+
+.fa-xmark {
+  display: none;
+}
+
+.side-bar {
+  display: none;
 }
 
 /* Header Ends Here */
@@ -397,50 +410,119 @@ hr {
 
 /* Footer Ends Here */
 
-@media (max-width: 768px) {
-  .navbar nav ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 0.5rem;
+/* Media Query Starts Here */
+
+@media (max-width: 767px) {
+  .logo h1 {
+    font-size: 25px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .logo .fa-moon {
+    font-size: 25px;
   }
 
-
-
-  .footer-links {
+  .menu-bar {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    transition: .5s;
+    background-color: #afc5be;
   }
 
-  .footer-brand,
-  .footer-links>div {
-    flex: 1 1 100%;
-  }
-
-  .wakhti form {
+  .menu-bar nav ul {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .wakhti input[type="email"],
-  .wakhti button {
-    width: 90%;
-    max-width: 400px;
+  .active {
+    right: 0;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 35px;
+    color: #1AA179;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .side-bar .fa-bars {
+    font-size: 20px;
+    color: #1AA179;
+    margin-right: 20px;
+  }
+
+  .sing-up-btn {
+    margin-left: 15px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .logo h1 {
+    font-size: 25px;
+  }
+
+  .logo .fa-moon {
+    font-size: 25px;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    transition: .5s;
+    background-color: #afc5be;
+  }
+
+  .menu-bar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 35px;
+    color: #1AA179;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .side-bar .fa-bars {
+    font-size: 20px;
+    color: #1AA179;
+    margin-right: 20px;
+  }
+
+  .sing-up-btn {
+    margin-left: 15px;
+    padding-bottom: 20px;
   }
 }
 
-
-@media (max-width: 480px) {
-  .timer {
-    font-size: 1.5rem;
-  }
-
-  .prayer strong {
-    font-size: 1rem;
-  }
-}
+/* Media Query Ends Here */
