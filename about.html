@@ -14,12 +14,13 @@
 <body>
     <!-- Header Starts Here -->
 
-    <header>
+     <header>
         <div class="logo">
             <i class="fa-solid fa-moon"></i>
             <h1>Ramadan Hub</h1>
         </div>
-        <div class="menu-bar">
+        <div class="menu-bar" id="menuBarBtn">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,10 +30,16 @@
                     <li><a href="community.html">Community</a></li>
                 </ul>
             </nav>
+            <div class="sing-up-btn">
+                <div class="dark-them" id="icon">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <button id="btn">Sing in</button>
+            </div>
         </div>
-        <div class="sing-up-btn">
-            <i class="fa-solid fa-moon"></i>
-            <button>Sing in</button>
+        <div class="side-bar">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
         </div>
     </header>
 
@@ -155,6 +162,7 @@
 
     <!-- Footer Ends Here -->
 
+    <script src="JS/abdout-us.js"></script>
 </body>
 
 </html>

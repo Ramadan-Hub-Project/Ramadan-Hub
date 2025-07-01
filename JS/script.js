@@ -261,8 +261,6 @@ icon.onclick = function() {
         icon.classList = "fa-solid fa-brightness";
     } 
   }
-
-
 const myButton = document.querySelector("#btn");
 myButton.addEventListener("click", function() {
     window.location.href = "sing-in.html";

@@ -8,23 +8,50 @@
 /* Colours we're using inside our project */
 
 :root {
-    --primary-color: #1aa179;
-    --color1: #1b4c3f;
-    --secondary-color: #1f2937;
-    --color2: #6b7280;
-    --color3: #f9fafb;
-    --bgcolor: #eaf7f2;
-    --color4: #0f766e;
-    --color5: #ffffff;
+     --primary-color: #eff8f5;
+    --color1: #ffffff;
+    --color2: #1AA179;
+     --color3: #f8f9fa;
+    --color4: #295848;
+    --color5: #293C36;
+    --secondary-color: #6B7280;
+    --secondary-color: #3c3e42;
+    --secondary-black: #191b1f;  
+   
+    /* --primary-color: #000106;
+    --color1: #000106;
+    --color3: #000106;
+    --color4: #000106;
+    --color5: #000106;
+    --secondary-color: #fff;
+    --secondary-color: #fff;
+    --secondary-black: #fff; */
+ 
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --color1: #000106;
+    --color2: #000106;
+    --color3: #000106;
+    --color4: #000106;
+    --color5: #000106;
+    --secondary-color: #fff;
+    --secondary-color: #fff;
+    --secondary-black: #fff;
 }
 
 /* Header CSS Starts Here */
+
+body{
+    background-color: var(--primary-color);
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color1);
     height: 90px;
     box-shadow: 5px 0 12px black;
     position: fixed;
@@ -50,6 +77,12 @@ header {
     font-size: 25px;
 }
 
+
+.menu-bar {
+    display: flex;
+    gap: 210px;
+}
+
 .menu-bar nav ul {
     display: flex;
 }
@@ -61,7 +94,7 @@ header {
 
 .menu-bar nav ul li a {
     text-decoration: none;
-    color: #6B7280;
+    color: var(--secondary-color);
     font-size: 18px;
 }
 
@@ -93,11 +126,26 @@ header {
     color: #209B6F;
 }
 
-.sing-up-btn .fa-moon {
-    color: #1AA179;
+.fa-moon {
+    color: var(--color2);
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+}
+
+.fa-sun {
+    color: var(--color2);
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+.side-bar {
+    display: none;
 }
 
 /* Header Ends Here */
@@ -107,10 +155,10 @@ section {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
     padding: 1rem 1.5rem;
     margin: 150px 0;
-    
+
 }
 
 .contact {
@@ -120,23 +168,23 @@ section {
     max-width: 800px;
     margin-right: 8rem;
     margin: auto;
- 
+
 }
 
-.container h2{
+.container h2 {
     text-transform: uppercase;
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.contact-wrapper h3{
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-  color: rgb(186, 176, 176)e2e;
+.contact-wrapper h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: rgb(186, 176, 176)e2e;
 }
 
-.contac form{
+.contac form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,16 +193,15 @@ section {
 
 .contact form input,
 .contact form textarea {
- width: 100%;
- padding: 0.8rem;
- border-radius: 0.5rem;
- outline: none;
- border: 1px solid #ccc;
- font-size: 0.8rem;
- margin-bottom: 1rem;
- border: none;
- position: relative;
-    
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+
 }
 
 button {
@@ -167,6 +214,7 @@ button {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 button:hover {
     background-color: #3a3636;
 }
@@ -177,7 +225,7 @@ button:hover {
     justify-content: space-around;
     gap: 1rem;
     padding: 1rem;
-   align-items: center;
+    align-items: center;
 }
 
 .contact-info h3 {
@@ -205,7 +253,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #295848;
+    background-color: var(--color4);
     height: 200px;
 }
 
@@ -255,7 +303,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #293C36;
+    background-color: var(--color5);
     height: 280px;
     padding-top: 50px;
 }
@@ -374,22 +422,244 @@ hr {
 /* Footer Ends Here */
 
 
-@media (max-width: 760px) {
-    section {
-        flex-direction: column;
-        gap: 1rem;
+@media (max-width: 767px) {
+    .logo h1 {
+        font-size: 25px;
+        color: var(--color2);
     }
 
-    .container{
-        max-width: 100%;
-        margin-top: 1rem;
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars{
+        font-size: 20px;
+        color: var(--color2);
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form button{
+       margin-left: 100px;
+    }
+
+    /* Stay Connected Starts Here */
+
+    .stay-connected {
+        margin-top: -100px;
+        height: 280px;
+    }
+
+    .stay-connected-title h3 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .stay-conntcted-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stay-conntcted-form input {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .stay-conntcted-form button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* Stay Connected Ends Here */
+
+    /* Footer Starts Here */
+
+    footer {
+        padding: 30px 20px;
+        background-color: #222;
+        /* Dark footer */
+        color: white;
+        text-align: center;
+        height: 750px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo i {
+        font-size: 24px;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-logo-info h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .quick-links,
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-links h3,
+    .resources h3,
+    .connect h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .quick-links a,
+    .resources a {
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .connect i {
+        font-size: 20px;
+        margin: 5px;
+        color: #4dd0e1;
+    }
+
+    footer hr {
+        margin: 30px 0;
+        border: 0;
+        border-top: 1px solid #555;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        color: white;
+        margin-top: -25px;
+    }
+
+    /* Footer Ends Here */
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: black;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
     }
 }
 
-
-@media (max-width: 400px) {
-    nav {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
+/* Media Query Ends Here */

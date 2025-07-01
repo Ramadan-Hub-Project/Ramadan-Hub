@@ -7,15 +7,45 @@
 
 /* Colours we're using inside our project */
 
-:root{
-    --primary-color: #1aa179;
-    --color1: #1b4c3f;
-    --secondary-color: #1f2937;
-    --color2: #6b7280; 
-    --color3: #f9fafb; 
-    --bgcolor: #eaf7f2; 
-    --color4: #0f766e; 
-    --color5: #ffffff; 
+:root {
+     --primary-color: #eff8f5;
+    --color1: #ffffff;
+    --color2: #1AA179;
+     --color3: #f8f9fa;
+    --color4: #295848;
+    --color5: #293C36;
+    --secondary-color: #6B7280;
+    --secondary-color: #3c3e42;
+    --secondary-black: #191b1f;  
+   
+    /* --primary-color: #000106;
+    --color1: #000106;
+    --color3: #000106;
+    --color4: #000106;
+    --color5: #000106;
+    --secondary-color: #fff;
+    --secondary-color: #fff;
+    --secondary-black: #fff; */
+ 
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --color1: #000106;
+    --color2: #000106;
+    --color3: #000106;
+    --color4: #000106;
+    --color5: #000106;
+    --secondary-color: #fff;
+    --secondary-color: #fff;
+    --secondary-black: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  height: 100vh;
+  
 }
 
 header{
@@ -64,7 +94,7 @@ header{
 
 .sing-up-btn{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     margin-right: 30px;
 }
@@ -87,36 +117,33 @@ header{
     cursor: pointer;
 }
 
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  height: 100vh;
-  margin-top: 120px;
-  
-}
-
 h2{
     text-align: center;
     padding-top: 20px;
 }
 
-.login{
-    width: 360px;
-    height: 500px;
-    background-color: white;
-    border-radius: 4px;
-    margin-top: 250px;
-    padding-bottom: 120;
-    margin: auto;
-    margin-bottom:100px ;
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
-form{
+.main-login{
+    width: 360px;
+    height: 400px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom:100px ;
+    margin-top: 100px;
+}
+
+form input{
    width: 250px;
    margin-left: 20px;
    padding-bottom: 100px;
-   
+   height: 40px;
 }
 
 label{
@@ -160,12 +187,11 @@ a{
     color: #1aa179;
 }
 
-
 footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #3b4b3f;
+    background-color: #2C352E;
     height: 280px;
     padding-top: 50px;
 }
@@ -261,8 +287,246 @@ hr{
     text-align: center;
     color: white;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+    .logo h1 {
+        font-size: 25px;
+        color: var(--color2);
+    }
 
+    .logo .fa-moon {
+        font-size: 25px;
+    }
 
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars{
+        font-size: 20px;
+        color: var(--color2);
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form button{
+       margin-left: 100px;
+    }
+
+    /* Stay Connected Starts Here */
+
+    .stay-connected {
+        margin-top: -100px;
+        height: 280px;
+    }
+
+    .stay-connected-title h3 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .stay-conntcted-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stay-conntcted-form input {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .stay-conntcted-form button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* Stay Connected Ends Here */
+
+    /* Footer Starts Here */
+
+    footer {
+        padding: 30px 20px;
+        background-color: #222;
+        /* Dark footer */
+        color: white;
+        text-align: center;
+        height: 750px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo i {
+        font-size: 24px;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-logo-info h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .quick-links,
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-links h3,
+    .resources h3,
+    .connect h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .quick-links a,
+    .resources a {
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .connect i {
+        font-size: 20px;
+        margin: 5px;
+        color: #4dd0e1;
+    }
+
+    footer hr {
+        margin: 30px 0;
+        border: 0;
+        border-top: 1px solid #555;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        color: white;
+        margin-top: -25px;
+    }
+
+    /* Footer Ends Here */
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Media Query Ends Here */

@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/sing-in.css">
     <title>Ramadan Hub - Sing In</title>
 </head>
-<body>
-    
-    <script src="./JS/sing-in.js"></script>
 
-    
-     <header>
+<body>
+
+
+    <header>
         <div class="logo">
             <i class="fa-solid fa-moon"></i>
             <h1>Ramadan Hub</h1>
         </div>
-        <div class="menu-bar">
+        <div class="menu-bar" id="menuBarBtn">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="prayer-timrs.html">Prayer Times</a></li>
                     <li><a href="quran.html">Quran</a></li>
                     <li><a href="mosques.html">Mosques</a></li>
                     <li><a href="community.html">Community</a></li>
                 </ul>
             </nav>
+            <div class="sing-up-btn">
+                <div class="dark-them" id="icon">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <button id="btn">Sing in</button>
+            </div>
         </div>
-        <div class="sing-up-btn">
-            <i class="fa-solid fa-moon"></i>
-            <button>Sing in</button>
+        <div class="side-bar">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
         </div>
     </header>
 
-    <div class="login">
-    <h2>welcome!</h2>
-    <form class="login">
-        <label>email</label>
-         <input type="email" placeholder="Enter your email">
-        <label>password</label>
-         <input type="text" placeholder="Enter your password">
+    <div class="main-div">
+        <div class="main-login">
+        <h2>welcome!</h2>
+        <form class="login">
+            <label>email</label>
+            <input type="email" placeholder="Enter your email">
+            <label>password</label>
+            <input type="text" placeholder="Enter your password">
 
-         <button type="">login</button>
-         <p>Already have an account <a href="sing-up.html">sign-up</a></p>
-    </form>
-   </div>
+            <button type="">login</button>
+            <p>Already have an account <a href="sing-up.html">sign-up</a></p>
+        </form>
+    </div>
+    </div>
 
-   <footer>
+    <footer>
         <div class="footer-content">
             <div class="footer">
                 <div class="footer-logo">
@@ -59,17 +71,17 @@
             </div>
             <div class="quick-links">
                 <h3>Quick Links</h3>
-                <a href="#">Prayer Times</a>
-                <a href="#">Quran</a>
+                <a href="prayer-timrs.html">Prayer Times</a>
+                <a href="quran.html">Quran</a>
                 <a href="mosques.html">Find Mosques</a>
                 <a href="community.html">Community</a>
             </div>
             <div class="resources">
                 <h3>Resources</h3>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="blog.html">Blog</a>
                 <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="connect">
                 <h3>Connect</h3>
@@ -88,6 +100,7 @@
 
     </footer>
 
-   
+    <script src="JS/sing-in.js"></script>
 </body>
+
 </html>
