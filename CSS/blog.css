@@ -50,6 +50,11 @@ header {
     font-size: 25px;
 }
 
+.menu-bar{
+    display: flex;
+    gap: 210px;
+}
+
 .menu-bar nav ul {
     display: flex;
 }
@@ -98,6 +103,14 @@ header {
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+}
+
+.fa-xmark{
+    display: none;
+}
+
+.side-bar{
+    display: none;
 }
 
 /* Header Ends Here */
@@ -549,3 +562,248 @@ hr{
 }
 
 /* Footer Ends Here */
+
+@media (max-width: 767px) {
+    .logo h1{
+        font-size: 25px;
+    }
+
+    .logo .fa-moon{
+        font-size: 25px;
+    }
+
+    .menu-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active{
+        right: 0;
+    }
+
+    .fa-xmark{
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar{
+        display: block;
+    }
+
+    .side-bar .fa-bars{
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn{
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .hero-blog-1,
+    .hero-blog-2,
+    .hero-blog-3,
+    .hero-blog-4,
+    .hero-blog-5,
+    .hero-blog-6,
+    .hero-blog-7,
+    .hero-blog-8{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    /* Stay Connected Starts Here */
+
+    .stay-connected {
+        margin-top: 50px;
+        height: 280px;
+    }
+
+    .stay-connected-title h3 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .stay-conntcted-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stay-conntcted-form input {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .stay-conntcted-form button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* Stay Connected Ends Here */
+
+    /* Footer Starts Here */
+
+    footer {
+        padding: 30px 20px;
+        background-color: #222;
+        /* Dark footer */
+        color: white;
+        text-align: center;
+        height: 750px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo i {
+        font-size: 24px;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-logo-info h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .quick-links,
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-links h3,
+    .resources h3,
+    .connect h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .quick-links a,
+    .resources a {
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .connect i {
+        font-size: 20px;
+        margin: 5px;
+        color: #4dd0e1;
+    }
+
+    footer hr {
+        margin: 30px 0;
+        border: 0;
+        border-top: 1px solid #555;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        color: white;
+        margin-top: -25px;
+    }
+
+    /* Footer Ends Here */
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Media Query Ends Here */
