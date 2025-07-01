@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/mosques.css">
     <title>Ramadan Hub - Mousques</title>
 </head>
+
 <body>
 
     <!-- Header Starts Here -->
@@ -16,20 +20,24 @@
             <i class="fa-solid fa-moon"></i>
             <h1>Ramadan Hub</h1>
         </div>
-        <div class="menu-bar">
+        <div class="menu-bar" id="menuBarBtn">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="prayer-timrs.html">Prayer Times</a></li>
                     <li><a href="quran.html">Quran</a></li>
                     <li><a href="mosques.html">Mosques</a></li>
                     <li><a href="community.html">Community</a></li>
                 </ul>
             </nav>
+            <div class="sing-up-btn">
+                <i class="fa-solid fa-moon"></i>
+                <button id="btn">Sing in</button>
+            </div>
         </div>
-        <div class="sing-up-btn">
-            <i class="fa-solid fa-moon"></i>
-            <button>Sing in</button>
+        <div class="side-bar">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
         </div>
     </header>
 
@@ -80,7 +88,10 @@
                 </div>
             </div>
             <div class="mosques-info-map">
-                <iframe src="https://plus.gabischool.com/index.php/student/dashboard" frameborder="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -117,17 +128,17 @@
             </div>
             <div class="quick-links">
                 <h3>Quick Links</h3>
-                <a href="#">Prayer Times</a>
-                <a href="#">Quran</a>
+                <a href="prayer-timrs.html">Prayer Times</a>
+                <a href="quran.html">Quran</a>
                 <a href="mosques.html">Find Mosques</a>
                 <a href="community.html">Community</a>
             </div>
             <div class="resources">
                 <h3>Resources</h3>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="blog.html">Blog</a>
                 <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="connect">
                 <h3>Connect</h3>
@@ -147,7 +158,11 @@
     </footer>
 
     <!-- Footer Ends Here -->
-    
+
     <script src="./JS/mosques.js"></script>
+
+
+
 </body>
+
 </html>
