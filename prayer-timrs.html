@@ -20,7 +20,8 @@
       <i class="fa-solid fa-moon"></i>
       <h1>Ramadan Hub</h1>
     </div>
-    <div class="menu-bar">
+    <div class="menu-bar" id="menuBarBtn">
+      <i class="fa-solid fa-xmark" id="closeBtn"></i>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,10 +31,13 @@
           <li><a href="community.html">Community</a></li>
         </ul>
       </nav>
+      <div class="sing-up-btn">
+        <i class="fa-solid fa-moon"></i>
+        <button id="btn">Sing in</button>
+      </div>
     </div>
-    <div class="sing-up-btn">
-      <i class="fa-solid fa-moon"></i>
-      <button>Sing in</button>
+    <div class="side-bar">
+      <i class="fa-solid fa-bars" id="menuBtn"></i>
     </div>
   </header>
 
@@ -50,6 +54,8 @@
           <div class="prayer"><span>Fajr</span><strong class="fajr">5:12 AM</strong></div>
           <div class="prayer"><span>Duhur</span><strong class="duhur">12:30 PM</strong></div>
           <div class="prayer"><span>Asr</span><strong class="asr">3:45 PM</strong></div>
+
+        
           <div class="prayer"><span>Maghrib</span><strong class="maghrib">6:48 PM</strong></div>
           <div class="prayer"><span>Isha</span><strong class="isha">8:15 PM</strong></div>
         </div>
@@ -118,17 +124,13 @@
         </div>
       </div>
 
-      <hr>
 
-      <div class="copyright">
-        <p>&copy; 2025 Ramadan Hub. All rights reserved</p>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2025 Ramadan Hub. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    </footer>
-
-    <!-- Footer Ends Here -->
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./JS/prayer-times.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,20 +7,20 @@
 
 /* Colours we're using inside our project */
 
-:root{
+:root {
     --primary-color: #1aa179;
     --color1: #1b4c3f;
     --secondary-color: #1f2937;
-    --color2: #6b7280; 
-    --color3: #f9fafb; 
-    --bgcolor: #eaf7f2; 
-    --color4: #0f766e; 
-    --color5: #ffffff; 
+    --color2: #6b7280;
+    --color3: #f9fafb;
+    --bgcolor: #eaf7f2;
+    --color4: #0f766e;
+    --color5: #ffffff;
 }
 
 /* Header CSS Starts Here */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ header{
     left: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     color: #1AA179;
@@ -42,41 +42,46 @@ header{
     gap: 5px;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 25px;
 }
 
-.logo .fa-moon{
+.logo .fa-moon {
     font-size: 25px;
 }
 
-.menu-bar nav ul{
+.menu-bar {
+    display: flex;
+    gap: 210px;
+}
+
+.menu-bar nav ul {
     display: flex;
 }
 
-.menu-bar nav ul li{
+.menu-bar nav ul li {
     list-style-type: none;
     margin: 15px;
 }
 
-.menu-bar nav ul li a{
+.menu-bar nav ul li a {
     text-decoration: none;
     color: #6B7280;
     font-size: 18px;
 }
 
-.menu-bar nav ul li a:hover{
+.menu-bar nav ul li a:hover {
     color: #209B6F;
 }
 
-.sing-up-btn{
+.sing-up-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
 }
 
-.sing-up-btn button{
+.sing-up-btn button {
     width: 100px;
     height: 40px;
     font-size: 18px;
@@ -87,24 +92,32 @@ header{
     cursor: pointer;
 }
 
-.sing-up-btn button:hover{
+.sing-up-btn button:hover {
     background: none;
     border: 2px solid #209B6F;
     color: #209B6F;
 }
 
-.sing-up-btn .fa-moon{
+.sing-up-btn .fa-moon {
     color: #1AA179;
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
 }
 
+.fa-xmark {
+    display: none;
+}
+
+.side-bar {
+    display: none;
+}
+
 /* Header Ends Here */
 
 /* Hero Mosques Starts Here */
 
-.hero-community{
+.hero-community {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -112,34 +125,34 @@ header{
     margin: 150px 0;
 }
 
-.community-title{
+.community-title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.community-title h1{
+.community-title h1 {
     margin-bottom: 30px;
 }
 
-.community-title h3{
+.community-title h3 {
     margin-bottom: 50px;
 }
 
-.comunity-info{
+.comunity-info {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
 }
 
-.community-iftar{
+.community-iftar {
     border: 2px solid #D9D9D9;
     max-width: 350px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.community-iftar-featured{
+.community-iftar-featured {
     background-color: #71E890;
     width: 100px;
     height: 35px;
@@ -150,94 +163,36 @@ header{
     margin-bottom: 20px;
 }
 
-.community-iftar-featured h3{
+.community-iftar-featured h3 {
     font-weight: lighter;
     color: #218E42;
     text-align: center;
     font-size: 20px;
 }
 
-.community-iftar-info h1{
+.community-iftar-info h1 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.community-iftar-info h3{
+.community-iftar-info h3 {
     font-weight: lighter;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
-.community-iftar-time-btn{
+.community-iftar-time-btn {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.community-iftar-time-btn h3{
+.community-iftar-time-btn h3 {
     font-weight: lighter;
     font-size: 16px;
 }
 
-.community-iftar-time-btn button{
-    width: 100px;
-    height: 45px;
-    font-size: 20px;
-    background-color: #1AA179;
-    border: none;
-    color: white;
-    margin-right: 15px;
-    border-radius: 50px;
-}
-
-.community-circle{
-    border: 2px solid #D9D9D9;
-    max-width: 350px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.community-circle-featured{
-    background-color: #71E890;
-    width: 130px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    margin-bottom: 20px;
-}
-
-.community-circle-featured h3{
-    font-weight: lighter;
-    color: #218E42;
-    text-align: center;
-    font-size: 20px;
-}
-
-.community-circle-info h1{
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.community-circle-info h3{
-    font-weight: lighter;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.community-circle-time-btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.community-circle-time-btn h3{
-    font-weight: lighter;
-    font-size: 16px;
-}
-
-.community-circle-time-btn button{
+.community-iftar-time-btn button {
     width: 100px;
     height: 45px;
     font-size: 20px;
@@ -248,14 +203,14 @@ header{
     border-radius: 50px;
 }
 
-.community-drive{
+.community-circle {
     border: 2px solid #D9D9D9;
     max-width: 350px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.community-drive-featured{
+.community-circle-featured {
     background-color: #71E890;
     width: 130px;
     height: 35px;
@@ -266,36 +221,94 @@ header{
     margin-bottom: 20px;
 }
 
-.community-drive-featured h3{
+.community-circle-featured h3 {
     font-weight: lighter;
     color: #218E42;
     text-align: center;
     font-size: 20px;
 }
 
-.community-drive-info h1{
+.community-circle-info h1 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.community-drive-info h3{
+.community-circle-info h3 {
     font-weight: lighter;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
-.community-drive-time-btn{
+.community-circle-time-btn {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.community-drive-time-btn h3{
+.community-circle-time-btn h3 {
     font-weight: lighter;
     font-size: 16px;
 }
 
-.community-drive-time-btn button{
+.community-circle-time-btn button {
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #1AA179;
+    border: none;
+    color: white;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.community-drive {
+    border: 2px solid #D9D9D9;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.community-drive-featured {
+    background-color: #71E890;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.community-drive-featured h3 {
+    font-weight: lighter;
+    color: #218E42;
+    text-align: center;
+    font-size: 20px;
+}
+
+.community-drive-info h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.community-drive-info h3 {
+    font-weight: lighter;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.community-drive-time-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.community-drive-time-btn h3 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.community-drive-time-btn button {
     width: 100px;
     height: 45px;
     font-size: 20px;
@@ -310,7 +323,7 @@ header{
 
 /* Stay Connected Starts Here */
 
-.stay-connected{
+.stay-connected {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -320,22 +333,22 @@ header{
     height: 200px;
 }
 
-.stay-connected-title{
+.stay-connected-title {
     text-align: center;
 }
 
-.stay-connected-title h1{
+.stay-connected-title h1 {
     color: white;
 }
 
-.stay-connected-title h3{
+.stay-connected-title h3 {
     color: white;
     font-weight: lighter;
     font-size: 16px;
     margin-top: 20px;
 }
 
-.stay-conntcted-form input{
+.stay-conntcted-form input {
     width: 450px;
     height: 50px;
     padding: 0 20px;
@@ -346,7 +359,7 @@ header{
     color: black;
 }
 
-.stay-conntcted-form button{
+.stay-conntcted-form button {
     width: 170px;
     height: 50px;
     border-radius: 50px;
@@ -362,7 +375,7 @@ header{
 
 /* Footer Starts Here */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -371,21 +384,21 @@ footer{
     padding-top: 50px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-evenly;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: start;
     color: #1AA179;
     margin-left: 30px;
-    
+
 }
 
-.footer-logo{
+.footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,16 +406,16 @@ footer{
     gap: 10px;
 }
 
-.footer-logo h1{
+.footer-logo h1 {
     color: #FEFEFE;
 }
 
-.footer-logo .fa-moon{
+.footer-logo .fa-moon {
     font-size: 25px;
     color: #46B88D;
 }
 
-.footer-logo-info h3{
+.footer-logo-info h3 {
     max-width: 280px;
     font-size: 15px;
     color: #6EB99A;
@@ -410,76 +423,314 @@ footer{
     text-align: start;
 }
 
-.quick-links{
+.quick-links {
     display: flex;
     flex-direction: column;
 }
 
-.quick-links h3{
+.quick-links h3 {
     color: white;
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.quick-links a{
+.quick-links a {
     text-decoration: none;
     color: white;
     margin: 5px 0;
 }
 
-.quick-links a:hover{
+.quick-links a:hover {
     color: #209B6F;
 }
 
-.resources{
+.resources {
     display: flex;
     flex-direction: column;
 }
 
-.resources h3{
+.resources h3 {
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.resources a{
+.resources a {
     text-decoration: none;
     color: white;
     margin: 5px 0;
 }
 
-.resources a:hover{
+.resources a:hover {
     color: #209B6F;
 }
 
-.connect h3{
+.connect h3 {
     color: white;
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.connect .fa-brands{
+.connect .fa-brands {
     font-size: 25px;
     color: white;
     margin: 0 5px;
     cursor: pointer;
 }
 
-.connect .fa-brands:hover{
+.connect .fa-brands:hover {
     color: #209B6F;
 }
 
-hr{
+hr {
     margin: 0 30px;
     margin-top: 30px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     color: white;
     margin-top: 10px;
 }
 
 /* Footer Ends Here */
+
+/* Media Query Starts Here */
+
+@media (max-width: 767px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .comunity-info{
+        flex-wrap: wrap;
+    }
+
+    /* Stay Connected Starts Here */
+
+    .stay-connected {
+        margin-top: -100px;
+        height: 280px;
+    }
+
+    .stay-connected-title h3 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .stay-conntcted-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stay-conntcted-form input {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .stay-conntcted-form button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* Stay Connected Ends Here */
+
+    /* Footer Starts Here */
+
+    footer {
+        padding: 30px 20px;
+        background-color: #222;
+        /* Dark footer */
+        color: white;
+        text-align: center;
+        height: 750px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo i {
+        font-size: 24px;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-logo-info h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .quick-links,
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-links h3,
+    .resources h3,
+    .connect h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .quick-links a,
+    .resources a {
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .connect i {
+        font-size: 20px;
+        margin: 5px;
+        color: #4dd0e1;
+    }
+
+    footer hr {
+        margin: 30px 0;
+        border: 0;
+        border-top: 1px solid #555;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        color: white;
+        margin-top: -25px;
+    }
+
+    /* Footer Ends Here */
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Media Query Ends Here */

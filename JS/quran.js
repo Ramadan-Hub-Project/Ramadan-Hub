@@ -1,4 +1,5 @@
 
+
 // 1. call the API using axios
 
 // const API_URL_ARabic = "http://api.alquran.cloud/v1/quran/quran-uthmani"
@@ -93,7 +94,6 @@ function fetchAudio(surahNum, ayahNum) {
     alert("Web Share API is not supported in your browser")
  }
 
-
 // Hadith Starts Here
 
 const Hadith_API = "https://api.hadith.gading.dev/books/muslim?range=1-150"
@@ -127,5 +127,28 @@ function displayCardHadith() {
 
 displayCardHadith()
 
+
+
 // Hadiths Ends Here
+
+const myButton = document.querySelector("#btn");
+myButton.addEventListener("click", function() {
+    window.location.href = "sing-in.html";
+});
+
+// Side Bar Navigation Starts Here
+
+const menuBtn = document.querySelector("#menuBtn");
+const closeBtn = document.querySelector("#closeBtn");
+const menuBarBtn = document.querySelector("#menuBarBtn");
+
+menuBtn.addEventListener("click", () => {
+    menuBarBtn.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    menuBarBtn.classList.remove("active");
+});
+
+// Side Bar Navigation Ends Here
 

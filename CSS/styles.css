@@ -45,6 +45,7 @@ body {
     max-width: 12000;
     margin: auto;
     background-color:var(--primary-color);
+
 }
 
 /* Header CSS Starts Here */
@@ -79,7 +80,13 @@ header{
     font-size: 25px;
 }
 
-.menu-bar nav ul{
+
+.menu-bar {
+    display: flex;
+    gap: 210px;
+}
+
+.menu-bar nav ul {
     display: flex;
 }
 
@@ -137,8 +144,13 @@ header{
     
 }
 
+.fa-xmark {
+    display: none;
+}
 
-
+.side-bar {
+    display: none;
+}
 
 /* Header Ends Here */
 
@@ -315,94 +327,110 @@ section {
 .prayer-section {
     padding: 3rem 2rem;
     text-align: center;
-    
+   
   }
   .prayer-time{
     color: var(--secondary-black);
   }
-  .prayer-grid {
+
+
+.prayer-grid {
+
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-  }
-  .prayer-times {
-    
+}
+
+.prayer-times {
+
     padding: 1.5rem;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 1rem;
-  }
-  .prayer {
+}
+
+.prayer {
     background: #f6fffc;
     width: 160px;
     height: 50px;
     padding: 1.8rem;
     border-radius: 1px;
-    
-  }
-  .prayer span {
+
+}
+
+.prayer span {
     display: block;
     font-size: 0.8rem;
     text-align: center;
-  }
-  .prayer strong {
+}
+
+.prayer strong {
     color: #1aa179;
     font-size: 1.2rem;
     text-align: center;
-  }
-  .wakhtiga-xiga {
+}
+
+.wakhtiga-xiga {
     padding: 1.5rem;
     background: #eff8f5;
     border-radius: 10px;
     text-align: center;
-  }
-  .wakhtiga-xiga .timer {
+}
+
+.wakhtiga-xiga .timer {
     font-size: 2rem;
     color: #1aa179;
     margin: 0.5rem 0;
-  }
-  .progress-bar {
+}
+
+.progress-bar {
     background: #ccc;
     height: 5px;
     border-radius: 3px;
     overflow: hidden;
-  }
-  .progress {
+}
+
+.progress {
     height: 5px;
     width: 60%;
     background: #1aa179;
-  }
-  /* End Here Prayer Times */
+}
 
-  /* Start Here Quran and Hadith */
-   
-  .quraan-xadiis {
+/* End Here Prayer Times */
+
+/* Start Here Quran and Hadith */
+
+.quraan-xadiis {
     padding: 2rem;
     text-align: center;
     color: var(--secondary-black);
   }
-  .quraan {
+
+
+.quraan {
     padding: 2rem 2rem;
     text-align: center;
-  }
-  .xadiis {
-    padding: .5rem .5rem; 
+}
+
+.xadiis {
+    padding: .5rem .5rem;
     text-align: center;
-  }
-  
-  .plays {
+}
+
+.plays {
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
     border: none;
     padding: 0.2rem 1rem;
     cursor: pointer;
-    
-  }
-  .quraan-xadiis {
+
+}
+
+.quraan-xadiis {
     padding: .05rem;
     text-align: center;
     justify-content: center;
@@ -410,80 +438,86 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .quraan {
+}
+
+.quraan {
     padding: 0rem 2rem;
     text-align: center;
-  }
-  .xadiis {
-    padding: .05rem .5rem .5rem .5rem; 
+}
+
+.xadiis {
+    padding: .05rem .5rem .5rem .5rem;
     text-align: center;
     margin-top: .5rem;
-   flex-direction: column;
+    flex-direction: column;
     justify-items: center;
     width: 350px;
-   
-  }
-  
-  .plays {
+
+}
+
+.plays {
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
     border: none;
     padding: 0.2rem 1rem;
     cursor: pointer;
-    
-  }
-  .plays :hover{
-  background-color: black;
-    font-size:1rem;
-  }
-  .plays button{
-      background-color: #00fcab;
-      color: white;
+
+}
+
+.plays :hover {
+    background-color: black;
+    font-size: 1rem;
+}
+
+.plays button {
+    background-color: #00fcab;
+    color: white;
     border: none;
     padding: 0.2rem 1rem;
     cursor: pointer;
-  border-radius:8px;
-  
-  }
-  .plays button{
-      background-color: #00fcab;
-      color: white;
+    border-radius: 8px;
+
+}
+
+.plays button {
+    background-color: #00fcab;
+    color: white;
     border: none;
     padding: 0.2rem 1rem;
     cursor: pointer;
-  border-radius:8px;
-  
-  }
-  /* End Here Quran and Hadith */
+    border-radius: 8px;
+
+}
+
+/* End Here Quran and Hadith */
 
 /*  Mosques Starts Here */
 
-.hero-mosques{
+.hero-mosques {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
 }
 
-.mosques-title{
+.mosques-title {
     text-align: center;
     margin: 50px 0;
     color: var(--secondary-black);
 }
 
-.mosques-title h3{
+.mosques-title h3 {
     font-weight: lighter;
     margin-top: 10px;
     font-size: 22px;
 }
 
-.mosques-info{
+.mosques-info {
     display: flex;
     justify-content: space-around;
 }
 
-.mosques-info-location{
+.mosques-info-location {
     background-color: #E9F3EA;
     width: 350px;
     height: 400px;
@@ -492,7 +526,7 @@ section {
     border-radius: 10px;
 }
 
-.mosques-info-location .mosques-search input{
+.mosques-info-location .mosques-search input {
     width: 310px;
     height: 50px;
     font-size: 20px;
@@ -504,50 +538,50 @@ section {
     margin-left: 20px;
 }
 
-.mosques-location-1{
+.mosques-location-1 {
     border: 2.5px solid #6B7280;
     border-radius: 5px;
     margin: 15px 20px;
     padding: 10px;
 }
 
-.mosques-location-1 h1{
+.mosques-location-1 h1 {
     font-size: 20px;
 }
 
-.mosques-location-1 h3{
+.mosques-location-1 h3 {
     font-weight: lighter;
     font-size: 18px;
     margin: 5px 0;
 }
 
-.mosques-rating-km-away{
+.mosques-rating-km-away {
     display: flex;
     gap: 5px;
 }
 
-.mosques-rating .fa-star{
+.mosques-rating .fa-star {
     color: #d4e215;
 }
 
-.mosques-location-2{
+.mosques-location-2 {
     border: 2.5px solid #6B7280;
     margin: 15px 20px;
     padding: 10px;
     border-radius: 5px;
 }
 
-.mosques-location-2 h1{
+.mosques-location-2 h1 {
     font-size: 20px;
 }
 
-.mosques-location-2 h3{
+.mosques-location-2 h3 {
     font-weight: lighter;
     font-size: 18px;
     margin: 5px 0;
 }
 
-.mosques-info-map iframe{
+.mosques-info-map iframe {
     width: 800px;
     height: 400px;
     border-radius: 10px;
@@ -568,7 +602,7 @@ section {
 
 /* Hero Mosques Starts Here */
 
-.hero-community{
+.hero-community {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -577,34 +611,34 @@ section {
    color: var(--secondary-black);
 }
 
-.community-title{
+.community-title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.community-title h1{
+.community-title h1 {
     margin-bottom: 30px;
 }
 
-.community-title h3{
+.community-title h3 {
     margin-bottom: 50px;
 }
 
-.comunity-info{
+.comunity-info {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
 }
 
-.community-iftar{
+.community-iftar {
     border: 2px solid #D9D9D9;
     max-width: 350px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.community-iftar-featured{
+.community-iftar-featured {
     background-color: #71E890;
     width: 100px;
     height: 35px;
@@ -615,94 +649,36 @@ section {
     margin-bottom: 20px;
 }
 
-.community-iftar-featured h3{
+.community-iftar-featured h3 {
     font-weight: lighter;
     color: #218E42;
     text-align: center;
     font-size: 20px;
 }
 
-.community-iftar-info h1{
+.community-iftar-info h1 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.community-iftar-info h3{
+.community-iftar-info h3 {
     font-weight: lighter;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
-.community-iftar-time-btn{
+.community-iftar-time-btn {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.community-iftar-time-btn h3{
+.community-iftar-time-btn h3 {
     font-weight: lighter;
     font-size: 16px;
 }
 
-.community-iftar-time-btn button{
-    width: 100px;
-    height: 45px;
-    font-size: 20px;
-    background-color: #1AA179;
-    border: none;
-    color: white;
-    margin-right: 15px;
-    border-radius: 50px;
-}
-
-.community-circle{
-    border: 2px solid #D9D9D9;
-    max-width: 350px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.community-circle-featured{
-    background-color: #71E890;
-    width: 130px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    margin-bottom: 20px;
-}
-
-.community-circle-featured h3{
-    font-weight: lighter;
-    color: #218E42;
-    text-align: center;
-    font-size: 20px;
-}
-
-.community-circle-info h1{
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.community-circle-info h3{
-    font-weight: lighter;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.community-circle-time-btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.community-circle-time-btn h3{
-    font-weight: lighter;
-    font-size: 16px;
-}
-
-.community-circle-time-btn button{
+.community-iftar-time-btn button {
     width: 100px;
     height: 45px;
     font-size: 20px;
@@ -713,14 +689,14 @@ section {
     border-radius: 50px;
 }
 
-.community-drive{
+.community-circle {
     border: 2px solid #D9D9D9;
     max-width: 350px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.community-drive-featured{
+.community-circle-featured {
     background-color: #71E890;
     width: 130px;
     height: 35px;
@@ -731,36 +707,94 @@ section {
     margin-bottom: 20px;
 }
 
-.community-drive-featured h3{
+.community-circle-featured h3 {
     font-weight: lighter;
     color: #218E42;
     text-align: center;
     font-size: 20px;
 }
 
-.community-drive-info h1{
+.community-circle-info h1 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.community-drive-info h3{
+.community-circle-info h3 {
     font-weight: lighter;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
-.community-drive-time-btn{
+.community-circle-time-btn {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.community-drive-time-btn h3{
+.community-circle-time-btn h3 {
     font-weight: lighter;
     font-size: 16px;
 }
 
-.community-drive-time-btn button{
+.community-circle-time-btn button {
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #1AA179;
+    border: none;
+    color: white;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.community-drive {
+    border: 2px solid #D9D9D9;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.community-drive-featured {
+    background-color: #71E890;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.community-drive-featured h3 {
+    font-weight: lighter;
+    color: #218E42;
+    text-align: center;
+    font-size: 20px;
+}
+
+.community-drive-info h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.community-drive-info h3 {
+    font-weight: lighter;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.community-drive-time-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.community-drive-time-btn h3 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.community-drive-time-btn button {
     width: 100px;
     height: 45px;
     font-size: 20px;
@@ -948,3 +982,1085 @@ hr {
 }
 
 /* Footer Ends Here */
+
+/* Media Query Starts Here */
+
+@media (max-width: 767px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* Essentail Features Starts Here */
+
+    .section {
+        padding: 20px;
+        background-color: white;
+        /* White background for the whole section */
+    }
+
+    .inner h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .inner p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icons {
+        width: 100%;
+        max-width: 300px;
+        background-color: white;
+        /* White background for each icon block */
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .icons button {
+        background: #eee;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .icons h4 {
+        font-size: 18px;
+        margin: 10px 0 5px;
+    }
+
+    .icons p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Essentail Features Ends Here */
+
+    /* Hero Starts Here */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-area {
+        margin-bottom: 20px;
+    }
+
+    .hero-area h2 {
+        font-size: 24px;
+    }
+
+    .hero-area span {
+        color: #007BFF;
+        /* Optional highlight color */
+    }
+
+    .hero-area p {
+        font-size: 16px;
+        margin: 10px 0 20px;
+    }
+
+    #start-button,
+    #learn-button {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 8px;
+        background-color: #009688;
+        color: white;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    /* Hero Ends Here */
+
+    /* Prayer Times Starts Here */
+
+    .prayer-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .prayer-section h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .prayer-section p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .prayer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .prayer-times {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .prayer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 14px 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .wakhtiga-xiga {
+        padding: 18px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .wakhtiga-xiga p {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .wakhtiga-xiga h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .timer {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .progress {
+        width: 50%;
+        /* should be controlled by JS */
+        height: 100%;
+        background-color: #009688;
+    }
+
+    /* Prayer Times Ends Here */
+
+    /* Quran and Hadith Starts Here */
+
+    .quraan-xadiis {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        background-color: white;
+    }
+
+    .quran,
+    .xadiis {
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        color: black;
+    }
+
+    .quran h3,
+    .xadiis h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    .surah-name,
+    .hadith-title {
+        font-size: 16px;
+        color: black;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ayah-quran {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        direction: rtl;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .ayah-translation {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .plays {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .play-btn,
+    .share-btn {
+        width: 200px;
+        height: 50px;
+        background-color: #009688;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .xadiis .hadith-text {
+        font-size: 22px;
+        line-height: 1.7;
+        direction: rtl;
+        text-align: right;
+        margin-top: 15px;
+        color: black;
+    }
+
+    /* Quran and Hadith Ends Here */
+
+    /* Mosque Starts Here */
+
+    .hero-mosques {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mosques-title h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .mosques-title h3 {
+        font-size: 16px;
+        text-align: center;
+        color: black;
+    }
+
+    .mosques-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mosques-info-location {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .mosques-search input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .mosques-location-1,
+    .mosques-location-2 {
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .mosques-location-1 h1,
+    .mosques-location-2 h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    .mosques-location-1 h3,
+    .mosques-location-2 h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .mosques-rating-km-away {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mosques-rating i {
+        color: gold;
+        font-size: 16px;
+    }
+
+    .mosques-km-away p {
+        font-size: 14px;
+        color: black;
+    }
+
+    .mosques-info-map iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 12px;
+    }
+
+    /* Mosque Ends Here */
+
+    /* Community Starts Here */
+
+    .hero-community {
+        padding: 30px 20px;
+        background-color: white;
+    }
+
+    .community-title h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .community-title h3 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .comunity-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .community-iftar,
+    .community-circle,
+    .community-drive {
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .community-iftar-featured h3,
+    .community-circle-featured h3,
+    .community-drive-featured h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #009688;
+    }
+
+    .community-iftar-info h1,
+    .community-circle-info h1,
+    .community-drive-info h1 {
+        font-size: 20px;
+        margin-bottom: 6px;
+        color: black;
+    }
+
+    .community-iftar-info h3,
+    .community-circle-info h3,
+    .community-drive-info h3 {
+        font-size: 15px;
+        color: black;
+    }
+
+    .community-iftar-time-btn,
+    .community-circle-time-btn,
+    .community-drive-time-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .community-iftar-time-btn h3,
+    .community-circle-time-btn h3,
+    .community-drive-time-btn h3 {
+        font-size: 14px;
+        color: #444;
+    }
+
+    .community-iftar-time-btn button,
+    .community-circle-time-btn button,
+    .community-drive-time-btn button {
+        padding: 10px 16px;
+        background-color: #009688;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    /* Community Ends Here */
+
+    /* Stay Connected Starts Here */
+
+    .stay-connected {
+        margin-top: -100px;
+        height: 280px;
+    }
+
+    .stay-connected-title h3 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .stay-conntcted-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .stay-conntcted-form input {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .stay-conntcted-form button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    /* Stay Connected Ends Here */
+
+    /* Footer Starts Here */
+
+    footer {
+        padding: 30px 20px;
+        background-color: #222;
+        /* Dark footer */
+        color: white;
+        text-align: center;
+        height: 750px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logo i {
+        font-size: 24px;
+    }
+
+    .footer-logo h1 {
+        font-size: 20px;
+    }
+
+    .footer-logo-info h3 {
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .quick-links,
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quick-links h3,
+    .resources h3,
+    .connect h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .quick-links a,
+    .resources a {
+        font-size: 19px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .connect i {
+        font-size: 20px;
+        margin: 5px;
+        color: #4dd0e1;
+    }
+
+    footer hr {
+        margin: 30px 0;
+        border: 0;
+        border-top: 1px solid #555;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        color: white;
+        margin-top: -20px;
+    }
+
+    /* Footer Ends Here */
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo .fa-moon {
+        font-size: 25px;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* Hero Starts Here */
+
+    /* HERO */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 40px;
+        background-color: white;
+        gap: 40px;
+    }
+
+    .hero-area h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .hero-area p {
+        font-size: 20px;
+        color: #444;
+        margin-bottom: 30px;
+    }
+
+    .hero-area button {
+        display: flex;
+        padding: 14px 28px;
+        font-size: 18px;
+        margin-right: 10px;
+        border: none;
+        background-color: #009688;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    #start-button{
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    #learn-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .hero img {
+        max-width: 50%;
+        border-radius: 12px;
+    }
+
+    /* FEATURES */
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 60px 40px;
+        background-color: white;
+    }
+
+    .icons {
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+    }
+
+    .icons button {
+        font-size: 28px;
+        background: none;
+        border: none;
+        margin-bottom: 10px;
+        color: #009688;
+    }
+
+    .icons h4 {
+        font-size: 20px;
+        color: black;
+    }
+
+    .icons p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* PRAYER TIMES */
+    .prayer-section {
+        padding: 60px 40px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .prayer-section h2 {
+        font-size: 32px;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .prayer-section p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .prayer-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .prayer-times {
+        flex: 1 1 45%;
+        font-size: 20px;
+        color: black;
+    }
+
+    .prayer-times .prayer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .wakhtiga-xiga {
+        flex: 1 1 45%;
+        background: #f3f3f3;
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .wakhtiga-xiga p,
+    .wakhtiga-xiga h4,
+    .wakhtiga-xiga .timer {
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .prayer span{
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 10px;
+        background: #ddd;
+        border-radius: 10px;
+    }
+
+    .progress {
+        height: 100%;
+        background: #009688;
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    /* QURAN & HADITH */
+    .quraan-xadiis {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 60px 40px;
+        background-color: white;
+    }
+
+    .quran,
+    .xadiis {
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 25px;
+        color: black;
+    }
+
+    .quran h3,
+    .xadiis h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .surah-name,
+    .hadith-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .ayah-quran {
+        font-size: 28px;
+        direction: rtl;
+        margin-bottom: 10px;
+    }
+
+    .ayah-translation {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .plays {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .plays button {
+        padding: 12px;
+        font-size: 16px;
+        background: #009688;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .xadiis .hadith-text {
+        font-size: 20px;
+        direction: rtl;
+        line-height: 1.8;
+    }
+
+    /* MOSQUES SECTION */
+    .hero-mosques {
+        padding: 60px 40px;
+        background-color: white;
+    }
+
+    .mosques-title h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .mosques-title h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #444;
+        text-align: center;
+    }
+
+    .mosques-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .mosques-info-location {
+        flex: 1 1 45%;
+    }
+
+    .mosques-search{
+        padding: 14px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .mosques-location-1,
+    .mosques-location-2 {
+        background: #f3f3f3;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .mosques-location-1 h1,
+    .mosques-location-2 h1 {
+        font-size: 20px;
+        color: black;
+    }
+
+    .mosques-location-1 h3,
+    .mosques-location-2 h3 {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .mosques-rating i {
+        color: gold;
+        font-size: 16px;
+    }
+
+    .mosques-km-away p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .mosques-info-map {
+        flex: 1 1 45%;
+    }
+
+    .mosques-info-map iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 12px;
+        border: none;
+    }
+
+    /* COMMUNITY EVENTS */
+    .hero-community {
+        padding: 60px 40px;
+        background-color: white;
+    }
+
+    .community-title h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .community-title h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #444;
+    }
+
+    .comunity-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .community-iftar,
+    .community-circle,
+    .community-drive {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        background: #f9f9f9;
+        padding: 30px;
+        border-radius: 12px;
+        width: 500px;
+    }
+
+    button{
+        margin-left: 30px;
+    }
+
+    .community-iftar-info h1,
+    .community-circle-info h1,
+    .community-drive-info h1 {
+        font-size: 26px;
+        margin-bottom: 6px;
+        color: black;
+    }
+
+    .community-iftar-info h3,
+    .community-circle-info h3,
+    .community-drive-info h3 {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .community-iftar-time-btn button,
+    .community-circle-time-btn button,
+    .community-drive-time-btn button {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #009688;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .community-iftar-time-btn h3,
+    .community-circle-time-btn h3,
+    .community-drive-time-btn h3 {
+        font-size: 16px;
+        color: #666;
+    }
+}
+
+/* Media Query Ends Here */

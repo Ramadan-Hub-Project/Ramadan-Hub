@@ -56,6 +56,11 @@ header {
   font-size: 25px;
 }
 
+.menu-bar {
+  display: flex;
+  gap: 210px;
+}
+
 .menu-bar nav ul {
   display: flex;
 }
@@ -105,6 +110,15 @@ header {
   margin-right: 30px;
   cursor: pointer;
 }
+
+.fa-xmark {
+  display: none;
+}
+
+.side-bar {
+  display: none;
+}
+
 
 /* Header Ends Here */
 
@@ -351,3 +365,393 @@ hr {
 }
 
 /* Footer Ends Here */
+
+/* Media Query Starts Here */
+
+@media (max-width: 767px) {
+  .logo h1 {
+    font-size: 25px;
+  }
+
+  .logo .fa-moon {
+    font-size: 25px;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    transition: .5s;
+    background-color: #afc5be;
+  }
+
+  .menu-bar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 35px;
+    color: #1AA179;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .side-bar .fa-bars {
+    font-size: 20px;
+    color: #1AA179;
+    margin-right: 20px;
+  }
+
+  .sing-up-btn {
+    margin-left: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Prayer Times Starts Here */
+
+  .prayer-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .prayer-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .prayer-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .prayer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .prayer-times {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .prayer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .wakhtiga-xiga {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .wakhtiga-xiga p {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .wakhtiga-xiga h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .timer {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress {
+    width: 50%;
+    /* should be controlled by JS */
+    height: 100%;
+    background-color: #009688;
+  }
+
+  /* Prayer Times Ends Here */
+
+  /* Community Ends Here */
+
+  /* Stay Connected Starts Here */
+
+  .stay-connected {
+    margin-top: 70px;
+    height: 300px;
+  }
+
+  .stay-connected-title h3 {
+    width: 350px;
+    font-size: 18px;
+  }
+
+  .stay-conntcted-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .stay-conntcted-form input {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .stay-conntcted-form button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  /* Stay Connected Ends Here */
+
+  /* Footer Starts Here */
+
+  footer {
+    padding: 30px 20px;
+    background-color: #222;
+    /* Dark footer */
+    color: white;
+    text-align: center;
+    height: 750px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo i {
+    font-size: 24px;
+  }
+
+  .footer-logo h1 {
+    font-size: 20px;
+  }
+
+  .footer-logo-info h3 {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .quick-links,
+  .resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .quick-links h3,
+  .resources h3,
+  .connect h3 {
+    font-size: 20px;
+    color: white;
+  }
+
+  .quick-links a,
+  .resources a {
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .connect i {
+    font-size: 20px;
+    margin: 5px;
+    color: #4dd0e1;
+  }
+
+  footer hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #555;
+  }
+
+  .copyright p {
+    font-size: 14px;
+    color: white;
+    margin-top: -20px;
+  }
+
+  /* Footer Ends Here */
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .logo h1 {
+    font-size: 25px;
+  }
+
+  .logo .fa-moon {
+    font-size: 25px;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    transition: .5s;
+    background-color: #afc5be;
+  }
+
+  .menu-bar nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 35px;
+    color: #1AA179;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .side-bar .fa-bars {
+    font-size: 20px;
+    color: #1AA179;
+    margin-right: 20px;
+  }
+
+  .sing-up-btn {
+    margin-left: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* PRAYER TIMES */
+  .prayer-section {
+    padding: 60px 40px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .prayer-section h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .prayer-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .prayer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .prayer-times {
+    flex: 1 1 45%;
+    font-size: 20px;
+    color: black;
+  }
+
+  .prayer-times .prayer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .wakhtiga-xiga {
+    flex: 1 1 45%;
+    background: #f3f3f3;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .wakhtiga-xiga p,
+  .wakhtiga-xiga h4,
+  .wakhtiga-xiga .timer {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .prayer span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+  }
+
+  .progress {
+    height: 100%;
+    background: #009688;
+    width: 40%;
+    border-radius: 10px;
+  }
+}
+
+/* Media Query Ends Here */

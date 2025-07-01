@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./CSS/blog.css">
     <title>Ramadan Hub - Blog</title>
 </head>
@@ -19,7 +21,8 @@
             <i class="fa-solid fa-moon"></i>
             <h1>Ramadan Hub</h1>
         </div>
-        <div class="menu-bar">
+        <div class="menu-bar" id="menuBarBtn">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,10 +32,13 @@
                     <li><a href="community.html">Community</a></li>
                 </ul>
             </nav>
+            <div class="sing-up-btn">
+                <i class="fa-solid fa-moon"></i>
+                <button id="btn">Sing in</button>
+            </div>
         </div>
-        <div class="sing-up-btn">
-            <i class="fa-solid fa-moon"></i>
-            <button>Sing in</button>
+        <div class="side-bar">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
         </div>
     </header>
 
@@ -200,6 +206,7 @@
     </footer>
 
     <!-- Footer Ends Here -->
+     <script src="JS/blog.js"></script>
 </body>
 
 </html>
