@@ -1,3 +1,4 @@
+
 const PrayerTimes_API = "https://api.aladhan.com/v1/timingsByCity?city=Mogadisho&country=Somalia&method=2"
 
 function fetchPrayerTimesAPI() {

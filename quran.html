@@ -43,30 +43,40 @@
 
 
   <main>
-    <section class="quraan-xadiis">
-      <div class="quran">
-        <h3>verse of the day </h3>
-        <h6 class="surah-name"></h6>
-        <p class="ayah-quran"></p>
-        <p class="ayah-translation"></p>
-      </div>
-      <div class="plays">
-        <button class="play-btn"><i class="fa-solid fa-play" style="color: #ffffff;">playing audio</i></button>
-        <audio class="ayah-audio"></audio>
-        <button class="share-btn"><i class="fa-solid fa-share" style="color: #ffffff;">share</i></button>
-      </div>
-      <!--  -->
 
-      <div class="xadiis">
-        <h3>Hadith Of The Day </h3>
+ <section class="quraan-xadiis">
+<div class="quraan">
+  <h3>verse of the day </h3>
+  <h6>From surah Al-Baqrah</h6>
+  <p>بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</p>
+  <p>In the name of Allah, most graclous, most merciful</p>
+  <div class="plays">
+  <button ><i class="fa-solid fa-play" style="color: #ffffff;">playing audio</i></button>
+  <button><i class="fa-solid fa-share" style="color: #ffffff;">share</i></button>
+  </div>
+</div>
+<div class="xadiis">
+  <h3>Hadith Of The Day </h3>
+        
+  <p class="hadith-title">sahih al-bukhaari believe Hadith 8</p>
+<p class="hadith-text">حدثنا ‌عبيد الله بن موسى قال:
+   أخبرنا ‌حنظلة بن أبي سفيان، عن ‌عكرمة بن خالد،
+   عن ‌ابن عمر رضي الله عنهما قال: قال رسول الله صلى الله عليه وسلم: 
+  «بني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمدا رسول الله، 
+  وإقام الصلاة، وإيتاء الزكاة، والحج، وصوم رمضان</p>
+</div>
+ </section>
+    
 
-        <p class="hadith-title">sahih al-bukhaari-believe-Hadith 8</p>
-        <p class="hadith-text">حدثنا ‌عبيد الله بن موسى قال:
-          أخبرنا ‌حنظلة بن أبي سفيان، عن ‌عكرمة بن خالد،
-          عن ‌ابن عمر رضي الله عنهما قال: قال رسول الله صلى الله عليه وسلم:
-          «بني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمدا رسول الله،
-          وإقام الصلاة، وإيتاء الزكاة، والحج، وصوم رمضان</p>
-      </div>
+    
+    <section class="wakhti">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to receive updates about prayer times, events and more</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+
     </section>
   </main>
 
@@ -132,10 +142,12 @@
 
   </footer>
 
+
   <!-- Footer Ends Here -->
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./JS/quran.js"></script>
+
 </body>
 
 </html>
