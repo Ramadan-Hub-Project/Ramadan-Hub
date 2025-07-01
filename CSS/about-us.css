@@ -8,24 +8,35 @@
 /* Colours we're using inside our project */
 
 :root {
-    --primary-color: #1aa179;
-    --color1: #1b4c3f;
-    --secondary-color: #1f2937;
-    --color2: #6b7280;
-    --color3: #f9fafb;
-    --bgcolor: #eaf7f2;
-    --color4: #0f766e;
-    --color5: #ffffff;
-   
+    --primary-color: #eff8f5;
+   --color1: #ffffff;
+   --color2: #1AA179;
+    --color3: #f8f9fa;
+   --color4: #295848;
+   --color5: #293C36;
+   --secondary-color: #6B7280;
+   --secondary-color: #3c3e42;
+   --secondary-black: #191b1f;  
 }
 
+.dark-theme{
+    --primary-color: #000106;
+    --color1: #000106;
+    --color2: #000106;
+    --color3: #000106;
+    --color4: #000106;
+    --color5: #000106;
+    --secondary-color: #fff;
+    --secondary-color: #fff;
+    --secondary-black: #fff;
+}
 /* Header CSS Starts Here */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color1);
     height: 90px;
     box-shadow: 5px 0 12px black;
     position: fixed;
@@ -34,7 +45,7 @@ header{
     left: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     color: #1AA179;
@@ -43,41 +54,46 @@ header{
     gap: 5px;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 25px;
 }
 
-.logo .fa-moon{
+.logo .fa-moon {
     font-size: 25px;
 }
 
-.menu-bar nav ul{
+.menu-bar{
+    display: flex;
+    gap: 210px;
+}
+
+.menu-bar nav ul {
     display: flex;
 }
 
-.menu-bar nav ul li{
+.menu-bar nav ul li {
     list-style-type: none;
     margin: 15px;
 }
 
-.menu-bar nav ul li a{
+.menu-bar nav ul li a {
     text-decoration: none;
     color: #6B7280;
     font-size: 18px;
 }
 
-.menu-bar nav ul li a:hover{
+.menu-bar nav ul li a:hover {
     color: #209B6F;
 }
 
-.sing-up-btn{
+.sing-up-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
 }
 
-.sing-up-btn button{
+.sing-up-btn button {
     width: 100px;
     height: 40px;
     font-size: 18px;
@@ -88,17 +104,25 @@ header{
     cursor: pointer;
 }
 
-.sing-up-btn button:hover{
+.sing-up-btn button:hover {
     background: none;
     border: 2px solid #209B6F;
     color: #209B6F;
 }
 
-.sing-up-btn .fa-moon{
+.sing-up-btn .fa-moon {
     color: #1AA179;
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+}
+
+.fa-xmark{
+    display: none;
+}
+
+.side-bar{
+    display: none;
 }
 
 /* Header Ends Here */
@@ -335,22 +359,58 @@ hr {
 /* Footer Ends Here */
 
 
-@media (max-width: 760px) {
-    .profile {
-        flex-direction: column;
-        gap: 1rem;
+@media (min-width: 768px) and (max-width: 1200px) {
+    .logo h1 {
+        font-size: 25px;
     }
 
-    .profile-pic {
-        max-width: 100%;
-        margin-top: 1rem;
+    .logo .fa-moon {
+        font-size: 25px;
     }
-}
 
-
-@media (max-width: 400px) {
-    nav {
+    .menu-bar {
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        transition: .5s;
+        background-color: #afc5be;
+    }
+
+    .menu-bar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
     }
 }
