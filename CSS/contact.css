@@ -50,6 +50,11 @@ header {
     font-size: 25px;
 }
 
+.menu-bar{
+    display: flex;
+    gap: 210px;
+}
+
 .menu-bar nav ul {
     display: flex;
 }
@@ -98,6 +103,14 @@ header {
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+}
+
+.fa-xmark{
+    display: none;
+}
+
+.side-bar{
+    display: none;
 }
 
 /* Header Ends Here */
