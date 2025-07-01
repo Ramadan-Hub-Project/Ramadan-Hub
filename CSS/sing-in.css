@@ -18,32 +18,105 @@
     --color5: #ffffff; 
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 90px;
+    box-shadow: 5px 0 12px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #1AA179;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+.logo .fa-moon{
+    font-size: 25px;
+}
+
+.menu-bar nav ul{
+    display: flex;
+}
+
+.menu-bar nav ul li{
+    list-style-type: none;
+    margin: 15px;
+}
+
+.menu-bar nav ul li a{
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 18px;
+}
+
+.sing-up-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.sing-up-btn button{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #1AA179;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.sing-up-btn .fa-moon{
+    color: #1AA179;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  margin-top: 120px;
+  
 }
 
 h2{
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .login{
     width: 360px;
-    height: 300px;
-    margin: auto;
+    height: 500px;
     background-color: white;
     border-radius: 4px;
-    margin-top: 20px;
+    margin-top: 250px;
+    padding-bottom: 120;
+    margin: auto;
+    margin-bottom:100px ;
 }
 
 form{
    width: 250px;
    margin-left: 20px;
+   padding-bottom: 100px;
+   
 }
 
 label{
@@ -86,3 +159,110 @@ p{
 a{
     color: #1aa179;
 }
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #3b4b3f;
+    height: 280px;
+    padding-top: 50px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #1AA179;
+    margin-left: 30px;
+    
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-logo .fa-moon{
+    font-size: 25px;
+}
+
+.footer-logo-info h3{
+    max-width: 280px;
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links h3{
+    color: white;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+}
+
+.resources h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resources a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.connect h3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connect .fa-brands{
+    font-size: 25px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin: 0 30px;
+    margin-top: 30px;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
