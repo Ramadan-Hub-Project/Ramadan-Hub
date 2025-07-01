@@ -7,20 +7,33 @@
 /* Colours we're using inside our project */
 
 :root {
-  --primary-color: #1aa179;
-  --color1: #1b4c3f;
-  --secondary-color: #1f2937;
-  --color2: #6b7280;
-  --color3: #f9fafb;
-  --bgcolor: #eaf7f2;
-  --color4: #0f766e;
-  --color5: #ffffff;
+  --primary-color: #eff8f5;
+  --color1: #ffffff;
+  --color2: #1AA179;
+   --color3: #f8f9fa;
+  --color4: #295848;
+  --color5: #293C36;
+  --secondary-color: #6B7280;
+  --secondary-color: #3c3e42;
+  --secondary-black: #191b1f;  
+}
+
+.dark-theme {
+  --primary-color: #000106;
+  --color1: #000106;
+  --color6: #000106;
+  --color3: #000106;
+  --color4: #000106;
+  --color5: #000106;
+  --secondary-color: #fff;
+  --secondary-color: #fff;
+  --secondary-black: #fff;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: var(--primary-color);
   color: #222;
 }
 
@@ -30,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--color1);
   height: 90px;
   box-shadow: 5px 0 12px black;
   position: fixed;
@@ -111,6 +124,21 @@ header {
   cursor: pointer;
 }
 
+.fa-moon{
+  color: var(--color2);
+  font-size: 25px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.fa-sun{
+  color: white;
+  font-size: 25px;
+  margin-right: 30px;
+  cursor: pointer;
+  
+}
+
 .fa-xmark {
   display: none;
 }
@@ -125,6 +153,7 @@ header {
   padding: 2rem;
   text-align: center;
   margin-top: 130px;
+  color: var(--secondary-black);
 }
 
 .quraan {
@@ -242,7 +271,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #295848;
+  background-color: var(--color4);
   height: 200px;
 }
 
@@ -292,7 +321,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #293C36;
+  background-color: var(--color5);
   height: 31z0px;
   padding-top: 50px;
 }

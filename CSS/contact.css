@@ -77,8 +77,7 @@ header {
     font-size: 25px;
 }
 
-
-.menu-bar {
+.menu-bar{
     display: flex;
     gap: 210px;
 }
@@ -140,11 +139,11 @@ header {
     cursor: pointer;
 }
 
-.fa-xmark {
+.fa-xmark{
     display: none;
 }
 
-.side-bar {
+.side-bar{
     display: none;
 }
 

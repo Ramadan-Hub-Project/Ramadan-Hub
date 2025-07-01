@@ -25,8 +25,7 @@
     --color5: #000106;
     --secondary-color: #fff;
     --secondary-color: #fff;
-    --secondary-black: #fff; */
- 
+    --secondary-black: #fff; *
 }
 
 .dark-theme{
@@ -45,7 +44,6 @@
 body{
     background-color: var(--primary-color);
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -75,7 +73,6 @@ header {
 .logo .fa-moon {
     font-size: 25px;
 }
-
 
 .menu-bar {
     display: flex;
@@ -139,11 +136,13 @@ header {
     cursor: pointer;
 }
 
-.fa-xmark {
+
+
+.fa-xmark{
     display: none;
 }
 
-.side-bar {
+.side-bar{
     display: none;
 }
 
@@ -585,6 +584,33 @@ hr {
     .menu-bar nav ul {
         display: flex;
         flex-direction: column;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .fa-xmark {
+        display: block;
+        font-size: 35px;
+        color: #1AA179;
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        display: block;
+    }
+
+    .side-bar .fa-bars {
+        font-size: 20px;
+        color: #1AA179;
+        margin-right: 20px;
+    }
+
+    .sing-up-btn {
+        margin-left: 15px;
+        padding-bottom: 20px;
     }
 
     .active {
