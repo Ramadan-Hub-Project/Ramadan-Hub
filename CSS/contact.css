@@ -102,44 +102,100 @@ header {
 
 /* Header Ends Here */
 
-.hero-profile{
-    margin-top: 100px;
-}
-
-.profile {
-    display: inline-block;
-    flex-direction: column-reverse;
+section {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.8rem 2rem;
-    margin: 0.5rem 1rem;
-    margin-top: 2rem;
     gap: 1rem;
-
+    background-color:#f2f2f2;
+    padding: 1rem 1.5rem;
+    margin: 150px 0;
+    
 }
 
-.profile-pic {
-    border-radius: 100px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin-right: 8rem;
     margin: auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-
-
+ 
 }
 
-.name {
-    font-size: 1rem;
+.container h2{
+    text-transform: uppercase;
+    font-size: 1.3rem;
     text-align: center;
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-.team {
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 400;
+.contact-wrapper h3{
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: rgb(186, 176, 176)e2e;
 }
+
+.contac form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+ width: 100%;
+ padding: 0.8rem;
+ border-radius: 0.5rem;
+ outline: none;
+ border: 1px solid #ccc;
+ font-size: 0.8rem;
+ margin-bottom: 1rem;
+ border: none;
+ position: relative;
+    
+}
+
+button {
+    background-color: #1aa179;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+button:hover {
+    background-color: #3a3636;
+}
+
+
+.contact-info {
+    display: block;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+   align-items: center;
+}
+
+.contact-info h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    min-height: 1.6;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.contact-info p i {
+    color: #1aa179;
+}
+
+.contact-info p {
+    padding: 0.5rem;
+}
+
 
 /* Stay Connected Starts Here */
 
@@ -319,12 +375,12 @@ hr {
 
 
 @media (max-width: 760px) {
-    .profile {
+    section {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .profile-pic {
+    .container{
         max-width: 100%;
         margin-top: 1rem;
     }

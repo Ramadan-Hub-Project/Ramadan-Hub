@@ -251,6 +251,18 @@ displayCardHadith()
 
 // Hadiths Ends Here
 
+
+
+var icon = document.querySelector("#icon");
+
+icon.onclick = function() {
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")){
+        icon.classList = "fa-solid fa-brightness";
+    } 
+  }
+
+
 const myButton = document.querySelector("#btn");
 myButton.addEventListener("click", function() {
     window.location.href = "sing-in.html";
